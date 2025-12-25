@@ -1,0 +1,125 @@
+
+import { Content } from '../types';
+
+export const mockContent: Content[] = [
+  {
+    id: '1',
+    title: 'The Protector (Hakan: Muhafız)',
+    description: 'Hakan is a young shopkeeper whose world gets turned upside down when he learns he is connected to a secret, ancient order, tasked with protecting Istanbul.',
+    thumbnail: 'https://picsum.photos/seed/protector/400/600',
+    backdrop: 'https://picsum.photos/seed/protector-back/1920/1080',
+    type: 'series',
+    genres: ['Action', 'Fantasy', 'Sci-Fi'],
+    rating: 4.5,
+    year: 2018,
+    isPopular: true,
+    trailerUrl: 'https://www.youtube.com/embed/Ssh7p-H_r-o',
+    comments: [],
+    episodes: Array.from({ length: 10 }).map((_, i) => ({
+      id: `ep-1-${i}`,
+      title: `Episode ${i + 1}`,
+      duration: '45m',
+      description: `Description for Episode ${i + 1} of The Protector.`,
+      thumbnail: 'https://picsum.photos/seed/protector-ep/320/180',
+      videoUrl: 'https://www.dailymotion.com/embed/video/x8nc7tq',
+      seasonNumber: 1,
+      episodeNumber: i + 1
+    }))
+  },
+  {
+    id: '2',
+    title: 'Diriliş: Ertuğrul',
+    description: 'The story of Ertuğrul Gazi, the father of Osman I, the founder of the Ottoman Empire.',
+    thumbnail: 'https://picsum.photos/seed/ertugrul/400/600',
+    backdrop: 'https://picsum.photos/seed/ertugrul-back/1920/1080',
+    type: 'series',
+    genres: ['History', 'Drama', 'Action'],
+    rating: 4.9,
+    year: 2014,
+    isPopular: true,
+    isNew: false,
+    trailerUrl: 'https://www.youtube.com/embed/v9K6B8gS9p0',
+    comments: [],
+    episodes: Array.from({ length: 5 }).map((_, i) => ({
+      id: `ep-2-${i}`,
+      title: `The Great Beginning Part ${i + 1}`,
+      duration: '120m',
+      description: `Epic description of the historic events in part ${i + 1}.`,
+      thumbnail: 'https://picsum.photos/seed/ert-ep/320/180',
+      videoUrl: 'https://www.dailymotion.com/embed/video/x8nc7tq',
+      seasonNumber: 1,
+      episodeNumber: i + 1
+    }))
+  },
+  {
+    id: '3',
+    title: 'Love 101 (Aşk 101)',
+    description: 'A group of 1990s teenagers who are at risk of exclusion from their school must work together to make their favorite teacher fall in love with their new basketball coach.',
+    thumbnail: 'https://picsum.photos/seed/love101/400/600',
+    backdrop: 'https://picsum.photos/seed/love101-back/1920/1080',
+    type: 'series',
+    genres: ['Teen', 'Comedy', 'Drama'],
+    rating: 4.2,
+    year: 2020,
+    isNew: true,
+    trailerUrl: 'https://www.youtube.com/embed/0G27vNAsTLY',
+    comments: [],
+    episodes: []
+  },
+  {
+    id: '4',
+    title: 'Şahsiyet (Persona)',
+    description: 'A retired judge clerk and a woman police officer cross paths while hunting a serial killer in Istanbul.',
+    thumbnail: 'https://picsum.photos/seed/persona/400/600',
+    backdrop: 'https://picsum.photos/seed/persona-back/1920/1080',
+    type: 'series',
+    genres: ['Crime', 'Drama', 'Mystery'],
+    rating: 4.8,
+    year: 2018,
+    isPopular: true,
+    trailerUrl: 'https://www.youtube.com/embed/j_8j0W1v_S8',
+    comments: []
+  },
+  {
+    id: '5',
+    title: 'Gibi',
+    description: 'Yılmaz and İlkkan are two friends who are constantly fighting with each other but also cannot stay away from each other.',
+    thumbnail: 'https://picsum.photos/seed/gibi/400/600',
+    backdrop: 'https://picsum.photos/seed/gibi-back/1920/1080',
+    type: 'series',
+    genres: ['Comedy'],
+    rating: 4.7,
+    year: 2021,
+    isPopular: true,
+    trailerUrl: 'https://www.youtube.com/embed/Ssh7p-H_r-o',
+    comments: []
+  },
+  {
+    id: '6',
+    title: 'Fatma',
+    description: 'A simple cleaning lady who finds herself in a world of crime while looking for her missing husband.',
+    thumbnail: 'https://picsum.photos/seed/fatma/400/600',
+    backdrop: 'https://picsum.photos/seed/fatma-back/1920/1080',
+    type: 'series',
+    genres: ['Thriller', 'Drama'],
+    rating: 4.1,
+    year: 2021,
+    isPopular: false,
+    trailerUrl: 'https://www.youtube.com/embed/Ssh7p-H_r-o',
+    comments: []
+  },
+  {
+    id: '7',
+    title: 'Mucize (The Miracle)',
+    description: 'A film about a teacher who is sent to a remote village and tries to improve the lives of the villagers.',
+    thumbnail: 'https://picsum.photos/seed/mucize/400/600',
+    backdrop: 'https://picsum.photos/seed/mucize-back/1920/1080',
+    type: 'movie',
+    genres: ['Drama', 'Family'],
+    rating: 4.9,
+    year: 2015,
+    isPopular: true,
+    trailerUrl: 'https://www.youtube.com/embed/Ssh7p-H_r-o',
+    comments: []
+  }
+];

@@ -1,0 +1,8 @@
+{
+  "name": "TurkStream - Turkish Series & Movies",
+  "description": "A high-end, Netflix-inspired streaming platform dedicated to Turkish series and movies, featuring a sleek dark UI, personalized recommendations, and an integrated admin panel.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
